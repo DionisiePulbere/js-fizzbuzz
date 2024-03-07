@@ -53,10 +53,16 @@ for (let i = 1; i <= 100; i ++){
     }
 
     // Per ogni numero creo il box e stampo la risposta e lo stile all'interno di esso
-    const newBox = `<div class="box m-2 ${color}">${multipli}</div>`;
-    container.innerHTML += newBox;
+    // const newBox = `<div class="box m-2 ${color}">${multipli}</div>`;
+    // container.innerHTML += newBox;
 
-
+    // Creo il div e inserisco le classi stampando all'interno le risposte
+    const newBox = document.createElement('div');
+    newBox.innerHTML = i;
+    newBox.classList.add('box');
+    newBox.classList.add('m-2');
+    newBox.classList.add(color);
+    container.append(newBox);
 }
 
 
