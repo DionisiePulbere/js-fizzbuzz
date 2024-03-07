@@ -1,0 +1,28 @@
+body{
+    background-color: #083B4C;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 80px;
+    height: 80px;
+}
+
+.coral{
+    background-color: #F1466F;
+}
+
+.aqua{
+    background-color: #0BD6A1;
+}
+
+.yellow{
+    background-color: #FFD166;
+}
+
+.petrol{
+    background-color: #1489B2;
+}

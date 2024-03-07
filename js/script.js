@@ -19,6 +19,11 @@
 // Mi raccomando facciamo il bonus solo dopo aver completato la consegna 
 // base e averne testato il corretto funzionamento.
 
+
+// creare il container 
+const container = document.querySelector('#number-container');
+
+
 // generare i numeri da 1 a 100 
 for (let i = 1; i <= 100; i ++){
 
@@ -35,7 +40,22 @@ for (let i = 1; i <= 100; i ++){
         multipli = i;
     }
 
-    console.log(multipli);
+    let color;
+
+    if(multipli === "FizzBuzz"){
+        color = "coral";
+    } else if (multipli === "Fizz"){
+        color = "aqua";
+    } else if (multipli === "Buzz"){
+        color = "yellow";
+    } else {
+        color = "petrol"
+    }
+
+    // Per ogni numero creo il box e stampo la risposta e lo stile all'interno di esso
+    const newBox = `<div class="box m-2 ${color}">${multipli}</div>`;
+    container.innerHTML += newBox;
+
 
 }
 
